@@ -32,7 +32,7 @@ const TurfList = () => {
             <p style={{ color: 'var(--text-muted)', marginBottom: '1rem', fontSize: '0.95rem' }}>📍 {turf.location}</p>
             <p style={{ marginBottom: '1.5rem', flex: 1, color: 'rgba(248, 250, 252, 0.9)' }}>{turf.description}</p>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: 'auto' }}>
-              <span style={{ fontWeight: 'bold', fontSize: '1.3rem', color: 'var(--accent)' }}>${turf.pricePerHour}<span style={{fontSize: '0.9rem', color: 'var(--text-muted)', fontWeight: 'normal'}}>/hr</span></span>
+              <span style={{ fontWeight: 'bold', fontSize: '1.3rem', color: 'var(--accent)' }}>₹ {turf.pricePerHour}<span style={{fontSize: '0.9rem', color: 'var(--text-muted)', fontWeight: 'normal'}}>/hr</span></span>
               <Link to={`/turfs/${turf._id}`}>
                 <button>Details & Book</button>
               </Link>
